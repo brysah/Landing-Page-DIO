@@ -1,0 +1,154 @@
+.s-trilha {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../img/bg-gradient.svg'), url('../img/bg-code.png');
+    object-fit: cover;
+    background-color: black;
+
+    img {
+        max-width: 24.8rem;
+        padding-top: 5.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    h1 {
+        margin-bottom: 1.6rem;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 47px;
+        background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    p {
+        max-width: 51rem;
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    button {
+        border: 2px solid transparent;
+        border-image: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%) 1;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.21em;
+        color: #31A8DD;
+        padding: 1.9rem 4.6rem;
+        margin-bottom: 7.5rem;
+        transition: border-image .3s, color .3s;
+
+        &:hover {
+            border-image: linear-gradient(180deg, #e6e7e8 0%, #f3f4f5 100%) 1;
+            color: #fff;
+        }
+
+    }
+}
+
+.s-modulo {
+    @include flex(column, center, center);
+    background-color: #000;
+    padding-top: 11.9rem;
+
+    h3 {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 38px;
+        letter-spacing: 0.19em;
+        color: #33A8DB;
+        margin-bottom: 2.4rem;
+    }
+
+    p {
+        max-width: 79.2rem;
+        width: 100%;
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .modulos {
+        @include flex(column, center, center);
+        gap: 2.4rem;
+        max-width: 53.5rem;
+        width: 100%;
+        margin-bottom: 9rem;
+
+        .item {
+
+            width: 100%;
+            background: #252525;
+            border: 1px solid #33A8DB;
+            box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+            border-radius: 57px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            span {
+                color: #33A8DB;
+            }
+        }
+    }
+}
+
+.s-transforme {
+    background-image: url('../img/bg-woman.svg');
+    object-fit: cover;
+    height: 36.3rem;
+    position: relative;
+    border: 1px solid #33A8DB;
+
+    h2 {
+        max-width: 24.4rem;
+        position: absolute;
+        top: 11.1rem;
+        left: 9.9rem;
+        width: 100%;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 47px;
+        color: #FFFFFF;
+        text-shadow: 3px 2px 0px #33A8DB;
+    }
+}
+
+.s-evolua {
+    @include flex(column, center, center);
+    padding-top: 7.5rem;
+
+    h3 {
+        max-width: 74.6rem;
+        width: 100%;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.19em;
+        color: #33A8DB;
+        margin-bottom: 3.2rem;
+    }
+
+    img {
+        margin-bottom: 4.6rem;
+    }
+
+    p {
+        max-width: 79.2rem;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 9.1rem;
+    }
+}
